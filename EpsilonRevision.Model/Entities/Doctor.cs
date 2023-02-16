@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EpsilonRevision.Model.Entities
 {
-    internal class Doctor
+    public class Doctor
     {
+
     }
 }
