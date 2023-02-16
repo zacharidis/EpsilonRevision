@@ -6,7 +6,34 @@ using System.Threading.Tasks;
 
 namespace EpsilonRevision.Model.Entities
 {
-    internal class Patient
+    public class Patient
     {
+        
+        public int Id { get; set; }// patients primary key
+        public string Name   { get; set; }
+        public string Surname { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+
+
+
+         public Patient(int id, string name, string surname, string address, string phoneNumber, string email)
+        {
+            
+            Name = name;
+            Surname = surname;
+            Address = address;
+            PhoneNumber = phoneNumber;
+            Email = email;
+
+
+        }
+  
+
+            
+ 
+       
+
     }
 }
