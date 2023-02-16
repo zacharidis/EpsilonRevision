@@ -8,6 +8,27 @@ namespace EpsilonRevision.Model.Entities
 {
     public class Doctor
     {
+        public int DoctorId { get; set; }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string PhoneNumber { get; set; }
+        public string Specialization { get; set; }
+        public string Email { get; set; }
+       
+
+        public Doctor(string name, string address, string phoneNumber, string specialization, string email)
+        {
+            Name = name;
+            Address = address;
+            PhoneNumber = phoneNumber;
+            Specialization = specialization;
+            Email = email;
+            
+        }
+
+        public Doctor()
+        {
+        }
 
     }
 }
