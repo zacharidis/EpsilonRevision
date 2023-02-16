@@ -8,8 +8,11 @@
 
   <ItemGroup>
     <Folder Include="Configurations\" />
-    <Folder Include="Context\" />
     <Folder Include="Repository\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EpsilonRevision.Model\EpsilonRevision.Model.csproj" />
   </ItemGroup>
 
 </Project>
