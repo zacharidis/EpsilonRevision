@@ -18,6 +18,8 @@ namespace EpsilonRevision.Model.Entities
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
+        public Doctor SuperVisingDoctor { get; set; }
+
         
 
 
