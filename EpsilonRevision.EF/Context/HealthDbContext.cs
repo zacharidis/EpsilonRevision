@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpsilonRevision.EF.Context
 {
-    public  class HealthDbContext : DbContext
+    public  class HealthDbContext :DbContext
     {
 
     }
