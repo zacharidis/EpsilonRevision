@@ -17,6 +17,9 @@ namespace EpsilonRevision.Model.Entities
 
        
 
+
+       
+
       
 
         public Consultation(Doctor doctor, string diagnosis, string treatment , Patient patient)

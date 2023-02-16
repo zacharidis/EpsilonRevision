@@ -34,7 +34,7 @@ namespace EpsilonRevision.EF.Configurations
 
             //relationships
 
-            builder.HasMany(d => d.Consultations).WithOne(c => c.Doctor).HasForeignKey(c => c.DoctorId).OnDelete(DeleteBehavior.Restrict);
+            builder.HasMany(d => d.Consultations).WithOne(c => c.Doctor).HasForeignKey(c => c.Doctor.DoctorId).OnDelete(DeleteBehavior.Restrict);
 
 
 
