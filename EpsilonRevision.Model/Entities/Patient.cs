@@ -16,9 +16,9 @@ namespace EpsilonRevision.Model.Entities
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
-        public List<HospitalAdmission> hospitalAdmissions { get; set; } //List<HospitalAdmission>
+        public List<HospitalAdmission> HospitalAdmissions { get; set; } //List<HospitalAdmission>
 
-        public  List<Consultation>  consultations { get; set; }
+        public  List<Consultation>  Consultations { get; set; }
 
 
 
@@ -31,8 +31,9 @@ namespace EpsilonRevision.Model.Entities
             PhoneNumber = phoneNumber;
             Email = email;
 
-            List<HospitalAdmission> = new  List<HospitalAdmission>();
-            List<Consultation> = new List<Consultation>();
+            HospitalAdmissions = new  List<HospitalAdmission>();
+            Consultations = new List<Consultation>();
+           
 
 
         }
