@@ -13,7 +13,29 @@ namespace EpsilonRevision.EF.Configurations
     {
         public void Configure(EntityTypeBuilder<Consultation> builder)
         {
-            throw new NotImplementedException();
+            
+            //table 
+            builder.ToTable(nameof(Consultation));
+
+            //primary key
+            builder.HasKey(c => c.ConsultationId);
+            builder.Property(c => c.ConsultationId).ValueGeneratedOnAdd();
+
+            //properties
+            builder.Property(c => c.Date).IsRequired();
+            builder.Property(c => c.Diagnosis).HasMaxLength(50).IsRequired();
+            builder.Property(c => c.Treatment).HasMaxLength(50).IsRequired();
+
+            //relationships
+
+            builder.HasOne(c => c.Doctor).WithMany(d => d.Consultations).HasForeignKey(c => c.Doctor.DoctorId).OnDelete(DeleteBehavior.Restrict);
+            builder.HasOne(c => c.Patient).WithMany(p => p.Consultations).HasForeignKey(c => c.Patient.Id).OnDelete(DeleteBehavior.Restrict);
+
+
+
+
+
+
         }
 
     }
