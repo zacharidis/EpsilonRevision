@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EpsilonRevision.EF.Configurations;
 using EpsilonRevision.Model.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,6 +23,13 @@ namespace EpsilonRevision.EF.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             
+            modelBuilder.ApplyConfiguration(new HospitalConfiguration());
+
+            // under construction
+            //modelBuilder.ApplyConfiguration(new DoctorConfiguration());
+            //modelBuilder.ApplyConfiguration(new PatientConfiguration());
+            //modelBuilder.ApplyConfiguration(new ConsultationConfiguration());
+            //modelBuilder.ApplyConfiguration(new HospitalAdmissionConfiguration());
 
 
         }
