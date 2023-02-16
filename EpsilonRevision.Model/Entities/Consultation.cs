@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EpsilonRevision.Model.Entities
 {
-    internal class Consultation
+    public class Consultation
     {
     }
 }
