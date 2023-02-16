@@ -24,9 +24,10 @@ namespace EpsilonRevision.EF.Context
         {
             
             modelBuilder.ApplyConfiguration(new HospitalConfiguration());
+            modelBuilder.ApplyConfiguration(new DoctorConfiguration());
 
             // under construction
-            //modelBuilder.ApplyConfiguration(new DoctorConfiguration());
+           
             //modelBuilder.ApplyConfiguration(new PatientConfiguration());
             //modelBuilder.ApplyConfiguration(new ConsultationConfiguration());
             //modelBuilder.ApplyConfiguration(new HospitalAdmissionConfiguration());
