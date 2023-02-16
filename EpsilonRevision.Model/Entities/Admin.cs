@@ -8,5 +8,7 @@ namespace EpsilonRevision.Model.Entities
 {
     internal class Admin
     {
+
+        //reserved for authentication / authorization
     }
 }
