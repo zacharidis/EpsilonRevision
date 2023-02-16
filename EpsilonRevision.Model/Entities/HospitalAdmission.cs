@@ -19,7 +19,9 @@ namespace EpsilonRevision.Model.Entities
         public bool IsDischarged { get; set; }
 
         //enum type
-        public Clinic Clinic { get; set; } 
+        public Clinic Clinic { get; set; }
+
+        public Doctor SuperVisingDoctor { get; set; }
 
 
         public HospitalAdmission( Clinic clinic , string diagnosis) {
