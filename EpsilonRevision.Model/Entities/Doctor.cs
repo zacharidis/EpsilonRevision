@@ -23,12 +23,20 @@ namespace EpsilonRevision.Model.Entities
             PhoneNumber = phoneNumber;
             Specialization = specialization;
             Email = email;
+
+            Consultations = new List<Consultation>();
             
         }
 
         public Doctor()
         {
         }
+
+        // relationhips 
+
+        public List<Consultation> Consultations { get; set; } 
+
+
 
     }
 }
